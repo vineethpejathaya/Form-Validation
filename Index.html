@@ -1,1 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-validator</title>
 
+    <!-- Style sheet for body-->
+    <link rel="stylesheet" href="normalize.css"/>
+    <link rel="stylesheet" href="Style.css"/>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading">
+        <h2>Connect with us</h2>
+        </div>
+        <form action="#" class="form" id="form">
+            <div class="form-control">
+                <label for="username">Username:</label>
+                <input type="text" name="username" id="username" placeholder="enter username"/>
+                <small >Username is required</small>
+            </div>
+            <div class="form-control">
+                <label for="email">Email Id:</label>
+                <input type="text" name="email" id="email" placeholder="enter email address"/>
+                <small>Email id is required</small>
+            </div>
+            <div class="form-control">
+                <label for="password">Password:</label>
+                <input type="text" name="password" id="password" placeholder="enter the password"/>
+                <small>Password is required</small>
+            </div>
+            <div class="form-control">
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="text" name="confirm-password" id="confirm-password" placeholder="re-enter the password"/>
+                <small>Confirm password is required</small>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="Script.js"></script>
+</body>
+
+</html>

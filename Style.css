@@ -1,1 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+html{
+    font-size: 16px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{  
+    background-color: white;
+    width: 30rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    border-radius: 0.5rem;
+}
+
+h2{
+    text-align: center;
+    margin: 1rem 1rem;
+    font-size: 1.5rem;
+}
+
+.form{   
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-control{
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    position: relative;
+}
+
+.form-control label{
+    color: blue;
+    display: block;
+    margin-bottom: o.5rem;
+    font-size: 1rem;
+}
+
+.form-control input{
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+    display:block;  
+    border: 2px solid gray;
+}
+
+.form-control input:focus{
+    outline: 0;
+    border-color: black;
+}
+
+.form-control small{
+    color: red;
+    font-size: 1rem;
+    position: absolute;
+    left: 0.5rem; 
+    visibility: hidden;
+}
+.form-control.error small{
+    visibility: visible;
+}
+.form-control.error input{
+    border-color: red;
+}
+.form-control.success input{
+    border-color: green;
+}
+
+button{ 
+    padding: 0.5rem;
+    background-color: #1E40AF;
+    border: 2px solid #1E40AF;
+    border-radius: 0.5rem;
+    margin: 2rem 0;
+    font-weight: 600;
+    font-size: 1rem;
+    color: white;
+}
